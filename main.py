@@ -127,7 +127,7 @@ def clase(call):
 						    					us+=1
 					    					rl = requests.get(f"https://o7aa.pythonanywhere.com/?id={id}")
 					    					ree = rl.json()
-					    					da = ree['data']
+					    					da = ree['date']
 					    					headers = {
         # 'Content-Length': '305',
         'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
