@@ -1,3 +1,6 @@
+import sys,os
+os.system("pip install pyTelegramBotAPI")
+os.system("pip install PyTelegramBotAPI==3.7.7")
 import requests 
 import os
 import telebot
