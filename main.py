@@ -10,6 +10,9 @@ os.system("pip install token_hex")
 os.system("pip install telebot")
 os.system("pip install instaloader")
 os.system("pip install requests")
+os.system("pip install secrets")
+os.system("pip install uid")
+os.system("pip install types")
 import requests 
 import os
 import telebot
