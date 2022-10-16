@@ -27,9 +27,8 @@ from OneClick import *
 import requests
 import telebot
 from telebot import types
-import instaloader
 csr = token_hex(8)*2
-bot = telebot.TeleBot("5643156448:AAHiUgLVPNnREH2NKvVgLnVo5bmuzlOaH8w")
+bot = telebot.TeleBot('5643156448:AAHiUgLVPNnREH2NKvVgLnVo5bmuzlOaH8w')
 @bot.message_handler(commands=["start"])
 def st(message):
     dev = types.InlineKeyboardButton(text="channel telegram", url="https://t.me/bsx_h2")
@@ -40,8 +39,6 @@ def st(message):
 @bot.message_handler(func=lambda m:True)
 def start(message):
     bot.send_message(message.chat.id,"Wait please")
-    ggg = instaloader.Instaloader()
-    profile = instaloader.Profile.from_username(ggg.context, message.text)
     head = {
 "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
       "Host": "i.instagram.com",
@@ -59,14 +56,14 @@ def start(message):
     kid=requests.post('https://i.instagram.com/api/v1/users/lookup/',headers=head,data=data).json()
     api = f'https://www.instagram.com/{message.text}/?__a=1&__d=dis'
     rr=requests.get(api).json()
-
-    iddd = (profile.userid)
-    nam = (profile.full_name)
-    fol = (profile.followees)
-    fols =(profile.followers)
-    bio = (profile.mediacount)
-    bayo = (profile.biography,profile.external_url)
-    pc = (profile.profile_pic_url)
+    nam = str(rr['graphql']['user']['full_name'])
+    iddd = str(rr['graphql']['user']['id'])
+    fol = str(rr['graphql']['user']['edge_followed_by']['count'])
+    fols =str(rr['graphql']['user']['edge_follow']['count'])
+    isp = str(rr['graphql']['user']['is_private'])
+    bio = str(rr['graphql']['user']['edge_owner_to_timeline_media']['count'])
+    bayo = str(rr['graphql']['user']['biography'])
+    pc = str(rr['graphql']["user"]["profile_pic_url"])
     re = requests.get(f"https://o7aa.pythonanywhere.com/?id={iddd}")   
     ree = re.json()
     dat = ree['date']
@@ -94,7 +91,7 @@ def start(message):
     ress=restt.text
     if 'obfuscated_email' in ress:
     	email=res['obfuscated_email']
-    	bot.send_photo(message.chat.id,pc,caption=f"<strong>Name : » {nam}\nuser :  » {message.text}\nID : » {iddd}\ndate : » {dat}\nFollowing :  » {fol}\nFollowers :  » {fols}\npost : » {bio}\nBYO : » {bayo}\nRest : » {email}</strong>",parse_mode="html")
+    	bot.send_photo(message.chat.id,pc,caption=f"<strong>Name : » {nam}\nuser :  » {message.text}\nID   : » {iddd}\ndate : » {dat}\nFollowing :  » {fol}\nFollowers :  » {fols}\npost : » {bio}\nBYO : » {bayo}\nRest : » {email}</strong>",parse_mode="html")
     if "graphql" not in nam:
         pass
 bot.polling(True)
