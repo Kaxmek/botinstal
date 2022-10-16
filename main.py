@@ -29,13 +29,7 @@ import telebot
 from telebot import types
 csr = token_hex(8)*2
 bot = telebot.TeleBot('5643156448:AAHiUgLVPNnREH2NKvVgLnVo5bmuzlOaH8w')
-@bot.message_handler(commands=["start"])
-def st(message):
-    dev = types.InlineKeyboardButton(text="channel telegram", url="https://t.me/bsx_h2")
-    key = types.InlineKeyboardMarkup()
-    key.add(dev)
-    ID = message.from_user.id
-    bot.send_message(message.chat.id,"اهلا بك عزيزي في بوت اضهار معلومات حساب انستا من يوزر فقط\n———————×———————\nارسل يوزرك الان\nالمبرمج @PPGBB",reply_markup=key,reply_to_message_id=message.message_id)
+
 @bot.message_handler(func=lambda m:True)
 def start(message):
     bot.send_message(message.chat.id,"Wait please")
