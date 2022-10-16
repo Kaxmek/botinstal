@@ -1,6 +1,7 @@
 import sys,os
 os.system("pip install pyTelegramBotAPI")
 os.system("pip install PyTelegramBotAPI==3.7.7")
+os.system("pip install stdiomask")
 import requests 
 import os
 import telebot
