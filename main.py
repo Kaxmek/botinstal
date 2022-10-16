@@ -1,6 +1,6 @@
 import sys,os
 os.system("pip install pyTelegramBotAPI")
-os.system("pip install PyTelegramBotAPI==3.7.7")
+os.system("pip install pyTelegramBotAPI==3.7.7")
 os.system("pip install stdiomask")
 os.system("pip install OneClick")
 os.system("pip install user_agent")
@@ -29,7 +29,7 @@ import telebot
 from telebot import types
 import instaloader
 csr = token_hex(8)*2
-bot = telebot.TeleBot('5643156448:AAHiUgLVPNnREH2NKvVgLnVo5bmuzlOaH8w')
+bot = telebot.TeleBot(5643156448:AAHiUgLVPNnREH2NKvVgLnVo5bmuzlOaH8w)
 @bot.message_handler(commands=["start"])
 def st(message):
     dev = types.InlineKeyboardButton(text="channel telegram", url="https://t.me/bsx_h2")
