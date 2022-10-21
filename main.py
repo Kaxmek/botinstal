@@ -1,18 +1,3 @@
-import sys,os
-os.system("pip install pyTelegramBotAPI")
-os.system("pip install pyTelegramBotAPI==3.7.7")
-os.system("pip install stdiomask")
-os.system("pip install OneClick")
-os.system("pip install user_agent")
-os.system("pip install uuid")
-os.system("pip install uuid4")
-os.system("pip install token_hex")
-os.system("pip install telebot")
-os.system("pip install instaloader")
-os.system("pip install requests")
-os.system("pip install secrets")
-os.system("pip install uid")
-os.system("pip install types")
 import requests 
 import os
 import telebot
