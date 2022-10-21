@@ -9,3 +9,11 @@ pyTelegramBotAPI
 requests
 
 uuid
+
+user_agent
+
+OneClick
+
+secrets
+
+stranslate
