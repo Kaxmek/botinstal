@@ -10,6 +10,7 @@ os.system('pip install uuid')
 os.system('pip install uuid4')
 os.system("pip install secrets")
 os.system("pip install stdiomask")
+os.system("pip install bs4")
 import requests 
 import os
 import telebot
