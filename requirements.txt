@@ -9,6 +9,5 @@ pyTelegramBotAPI
 requests
 uuid
 user_agent
-secrets
 instaloder
 stdiomask
