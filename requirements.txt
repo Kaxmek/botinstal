@@ -4,7 +4,6 @@ telegraph
 requests
 pyrogram
 telebot
-pyTelegramBotAPI==3.7.6
 pyTelegramBotAPI
 requests
 user_agent
