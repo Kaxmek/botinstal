@@ -4,8 +4,3 @@ telegraph
 requests
 pyrogram
 telebot
-pyTelegramBotAPI
-requests
-user_agent
-instaloder
-stdiomask
