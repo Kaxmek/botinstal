@@ -16,4 +16,4 @@ OneClick
 
 secrets
 
-stranslate
+stdiomask
