@@ -1,8 +1,5 @@
 requests
-pip telebot
-pip PyTelegramBotAPI
-pip pyTelegramBotAPI==3.7.6
-pip pyTelegramBotAPI==3.7.7
+telebot
 user_agent
 stdiomask
 OneClick
