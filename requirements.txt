@@ -1,8 +1,8 @@
 requests
-pip install telebot
-pip install PyTelegramBotAPI
-pip install pyTelegramBotAPI==3.7.6
-pip install pyTelegramBotAPI==3.7.7
+pip telebot
+pip PyTelegramBotAPI
+pip pyTelegramBotAPI==3.7.6
+pip pyTelegramBotAPI==3.7.7
 user_agent
 stdiomask
 OneClick
