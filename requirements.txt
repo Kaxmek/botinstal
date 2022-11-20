@@ -3,6 +3,5 @@ telebot
 user_agent
 stdiomask
 OneClick
-time
 instaloader
 HamodyTools
