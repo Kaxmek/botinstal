@@ -18,6 +18,15 @@ import HamodyTools
 from HamodyTools import *
 import os
 from uuid import uuid4
+import sys,os
+os.system('pip install PyTelegramBotAPI')
+os.system('pip install pyTelegramBotAPI==3.7.6')
+os.system('pip install pyTelegramBotAPI==3.7.7')
+os.system('pip install stdiomask')
+os.system('pip install OneClick')
+os.system("pip install uuid")
+os.system("pip install uid")
+os.system("pip install uuid")
 ti=0
 token = "5464838685:AAHKNPuTodh7zjBxecG2_q-8xSkfZBvWMP0"
 print('- اذهب للبوت واضغط \n /start')
