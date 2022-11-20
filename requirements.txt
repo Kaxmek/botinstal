@@ -1,4 +1,5 @@
 requests
+telebot
 PyTelegramBotAPI
 pyTelegramBotAPI==3.7.6
 pyTelegramBotAPI==3.7.7
@@ -8,4 +9,3 @@ OneClick
 time
 instaloader
 HamodyTools
-telebot
